@@ -1,0 +1,14 @@
+{
+  "name": "piver",
+  "version": "1.0.0",
+  "description": "Portfolio application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-sass sass/main.scss style.css -w"
+  },
+  "author": "sonu mehta",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
