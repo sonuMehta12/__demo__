@@ -1,6 +1,7 @@
 //color
-$color-primary: #771cc2;
-
+$color-primary: #7634a5;
+$color-primary-dark: #333;
+$color-back: #d6a2e8;
 *,
 *::after,
 *::before {
@@ -19,4 +20,6 @@ body {
   line-height: 1.6;
   color: $color-primary;
   font-size: 1.6rem;
+  margin: 1rem;
+  letter-spacing: 1px;
 }
