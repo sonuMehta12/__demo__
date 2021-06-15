@@ -12,74 +12,71 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 300;
   line-height: 1.6;
-  color: #7634a5;
+  color: #c991f1;
+  background-image: linear-gradient(to right, #e2e0e0, #e9e3e3);
   font-size: 1.6rem;
   margin: 1rem;
   letter-spacing: 1px; }
 
+.main {
+  width: 80vw;
+  height: 97vh;
+  margin: 0 auto;
+  background-color: #c7a0d3;
+  border-radius: 1rem;
+  overflow: hidden; }
+
 .header {
   display: flex;
-  background-color: #d6a2e8;
+  background-color: #cfaeda;
   justify-content: space-between;
   align-items: center;
-  height: 6.5rem; }
+  height: 6.5rem;
+  border-bottom: 1px solid grey; }
 
 .logo {
-  background-color: royalblue; }
+  color: #8b1495;
+  margin-left: 10%;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #333; }
 
 .search {
   width: 25%;
   display: inline-block;
   background-color: white;
-  box-shadow: 0 8px 4px #7634a598;
   border-radius: 5px; }
   .search__form {
     position: relative;
     text-align: center;
-    border: none; }
+    border: none;
+    flex-basis: 30%; }
   .search__input {
     width: 80%;
     padding: 1rem;
     border-radius: 5px;
     border: none;
-    z-index: 2; }
+    z-index: 2;
+    transition: all 0.2s; }
     .search__input:focus {
-      outline: none; }
+      outline: none;
+      width: 100%;
+      z-index: 10;
+      box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+      border-right: 3px solid red; }
+    .search__input:focus ~ :last-child {
+      opacity: 0; }
     .search__input::placeholder {
-      color: #7634a5; }
+      color: #c991f1;
+      padding-left: 0.8rem; }
   .search__btn {
     position: absolute;
-    background-color: transparent;
+    background-color: white;
     height: 100%;
+    transition: all 0.2s;
+    padding-left: 2px;
     top: 0%;
     left: 4%;
     border: none;
-    color: #7634a5;
+    color: #c991f1;
     border-radius: 5px; }
-
-.nav {
-  flex: 15% 0 0;
-  height: 100%;
-  background-color: red;
-  position: relative; }
-  .nav__list {
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    height: 100%; }
-  .nav__items {
-    height: 100%;
-    position: relative;
-    top: 30%; }
-  .nav__link {
-    color: #7634a5; }
-  .nav__photo {
-    height: 100%;
-    border-radius: 55%;
-    transform: translateY(-30%); }
-  .nav__name {
-    font-size: small;
-    text-transform: uppercase; }
-
-.link {
-  text-decoration-line: none; }

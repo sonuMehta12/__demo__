@@ -1,7 +1,12 @@
 //color
-$color-primary: #7634a5;
+$color-primary: #c991f1;
 $color-primary-dark: #333;
-$color-back: #d6a2e8;
+$color-back: #c7a0d3;
+$color-back-2: #cfaeda;
+
+$color-gradient-1: rgb(226, 224, 224);
+$color-gradient-2: #e9e3e3;
+
 *,
 *::after,
 *::before {
@@ -19,7 +24,21 @@ body {
   font-weight: 300;
   line-height: 1.6;
   color: $color-primary;
+  background-image: linear-gradient(
+    to right,
+    $color-gradient-1,
+    $color-gradient-2
+  );
   font-size: 1.6rem;
   margin: 1rem;
   letter-spacing: 1px;
+}
+
+.main {
+  width: 80vw;
+  height: 97vh;
+  margin: 0 auto;
+  background-color: $color-back;
+  border-radius: 1rem;
+  overflow: hidden;
 }
