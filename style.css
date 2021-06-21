@@ -32,7 +32,8 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 6.5rem;
-  border-bottom: 1px solid grey; }
+  border-bottom: 1px solid grey;
+  position: relative; }
 
 .logo {
   color: #8b1495;
@@ -46,6 +47,32 @@ body {
   display: inline-block;
   background-color: white;
   border-radius: 5px; }
+  .search__suggestion {
+    position: absolute;
+    left: 0;
+    display: none;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    background-color: white;
+    transition: all 0.3s;
+    animation-delay: 0.2s; }
+    .search__suggestion--link:link, .search__suggestion--link:visited {
+      display: block;
+      background-color: #c991f1;
+      color: white;
+      text-transform: uppercase;
+      margin: 0.5rem;
+      padding: 0.5rem;
+      text-align: left;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1); }
+    .search__suggestion--link:hover {
+      box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+      transform: translateY(-3px);
+      background-color: darkorchid; }
+    .search__suggestion--link:active {
+      transform: translateY(0px); }
   .search__form {
     position: relative;
     text-align: center;
@@ -65,6 +92,9 @@ body {
       box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
       border-right: 3px solid red; }
     .search__input:focus ~ :last-child {
+      display: block;
+      width: 106%; }
+    .search__input:focus ~ :nth-last-child(2) {
       opacity: 0; }
     .search__input::placeholder {
       color: #c991f1;
@@ -80,3 +110,14 @@ body {
     border: none;
     color: #c991f1;
     border-radius: 5px; }
+
+.user-nav {
+  flex-basis: 20%;
+  margin-right: 2%;
+  display: flex;
+  justify-content: space-evenly;
+  justify-items: center; }
+  .user-nav__profile--img {
+    height: 4rem;
+    width: 3rem;
+    border-radius: 55px; }

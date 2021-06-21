@@ -5,6 +5,7 @@
   align-items: center;
   height: 6.5rem;
   border-bottom: 1px solid grey;
+  position: relative;
 }
 .logo {
   color: rgb(139, 20, 149);
@@ -19,7 +20,41 @@
   display: inline-block;
   background-color: white;
   border-radius: 5px;
+  &__suggestion {
+    position: absolute;
+    left: 0;
+    display: none;
+    border-radius: 5px;
+    margin-top: 0.5rem; // display: none;
+    background-color: white;
+    transition: all 0.3s;
+    animation-delay: 0.2s;
 
+    &--link {
+      &:link,
+      &:visited {
+        display: block;
+        background-color: $color-primary;
+        color: white;
+        text-transform: uppercase;
+        margin: 0.5rem;
+        padding: 0.5rem;
+        text-align: left;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+      &:hover {
+        box-shadow: 0 4px 5px rgba($color: #000, $alpha: 0.2);
+        transform: translateY(-3px);
+        background-color: darkorchid;
+      }
+
+      &:active {
+        transform: translateY(0px);
+      }
+    }
+  }
   &__form {
     position: relative;
     text-align: center;
@@ -46,6 +81,10 @@
     }
 
     &:focus ~ :last-child {
+      display: block;
+      width: 106%;
+    }
+    &:focus ~ :nth-last-child(2) {
       opacity: 0;
     }
 
@@ -66,5 +105,23 @@
     border: none;
     color: $color-primary;
     border-radius: 5px;
+  }
+}
+
+.user-nav {
+  flex-basis: 20%;
+  margin-right: 2%;
+  display: flex;
+  justify-content: space-evenly;
+  justify-items: center;
+  &__profile {
+    &--img {
+      height: 4rem;
+      width: 3rem;
+      border-radius: 55px;
+    }
+
+    &--name {
+    }
   }
 }
