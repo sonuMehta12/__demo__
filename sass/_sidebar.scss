@@ -1,5 +1,8 @@
 .sidebar {
   border-right: 1px solid grey;
+  @include repond(ipad) {
+    background-color: #265eb9;
+  }
 }
 
 .features-box {
@@ -24,11 +27,14 @@
   transition: all 0.2s;
   color: #dddddd;
   transition: all 0.2s;
-
+  border: none;
   &:hover {
     background-color: #265eb9;
     box-shadow: 4px 8px 3px rgba(51, 51, 51, 0.2);
     font-weight: bold;
+  }
+  &:active {
+    background-color: #34568b;
   }
 }
 

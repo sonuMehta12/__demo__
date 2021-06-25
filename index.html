@@ -10,9 +10,18 @@
   <body>
     <main class="main">
       <header class="header">
+        <div class="navigation">
+          <input type='checkbox' class="navigation__checkbox" id="navi-toggle">
+          <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+          </label>
+        </div>
         <div class="logo">
           <span class="logo__title">Piver</span>
         </div>
+        <a href="#" class="home link ">
+          <ion-icon class="icon" name="home"></ion-icon>
+        </a>
         <div class="search">
           <form action="" class="search__form">
             <input
@@ -103,18 +112,114 @@
       <div class="main-page">
         <div class="content">
           <div class="content-header">
-            header
+            <div class="user-box">
+              <a class="link link-author" href="#">
+                <img src="./img/pp.jpeg" alt="" class="img">
+                <span class="author-name">sonu mehta</span>
+              </a>
+              <span class="ago">5d ago</span>
+            </div>
+            <div class="title-box">
+              <a class="link title-link" href="#">
+                <h1 class="title">forkify</h1>
+              </a>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat vitae ur reprehenderit, deleniti iusto praesentium.</p>
+            </div>
+            <a class="link live"  href="#">check live</a>
+            
           </div>
-          <div class="content-post">content post</div>
-          <div class="content-features">features</div>
+          <button class="btn btn-left">
+            <ion-icon class="icon" name="arrow-back-circle-outline"></ion-icon>
+          </button>
+          <button class="btn btn-right">
+            <ion-icon class="icon"name="arrow-forward-circle-outline"></ion-icon>
+          </button>
+          <div class="content-post">
+           
+            <img class="img-post" src="./img/12036599a3257b4acaf813a01b315971.webp" alt="post-image">
+            
+          </div>
+          <div class="content-features">
+            <button class="btn btn-icon btn-with-span">
+              <ion-icon class="icon" name="heart-outline"></ion-icon>
+              <span>33</span>
+              <!-- <ion-icon name="heart-outline"></ion-icon> -->
+            </button>
+            <a href="#" class="link btn btn-icon">
+              <ion-icon class="icon" name="code-slash-outline"></ion-icon>
+            </a>
+            <form class="form-comment">
+              <input class="input-comment" type="text" placeholder="add a comment">
+              <button class="btn btn-comment ">
+                <ion-icon class="icon" name="send-outline"></ion-icon>
+              </button>
+            </form>
+            <button class="btn btn-icon">
+              <ion-icon class="icon" name="bookmark-outline"></ion-icon>
+              <!-- <ion-icon class="icon" name="bookmark"></ion-icon> -->
+            </button>
+            <button class="btn btn-icon">
+              <ion-icon class="icon" name="share-social-outline"></ion-icon>
+            </button>
+          
+          </div>
+          
         </div>
         <div class="content">
           <div class="content-header">
-            header
+            <div class="user-box">
+              <a class="link link-author" href="#">
+                <img src="./img/pp.jpeg" alt="" class="img">
+                <span class="author-name">sonu mehta</span>
+              </a>
+              <span class="ago">5d ago</span>
+            </div>
+            <div class="title-box">
+              <a class="link title-link" href="#">
+                <h1 class="title">forkify</h1>
+              </a>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat vitae ur reprehenderit, deleniti iusto praesentium.</p>
+            </div>
+            
           </div>
-          <div class="content-post">content post</div>
-          <div class="content-features">features</div>
+          <button class="btn btn-left">
+            <ion-icon class="icon" name="arrow-back-circle-outline"></ion-icon>
+          </button>
+          <button class="btn btn-right">
+            <ion-icon class="icon"name="arrow-forward-circle-outline"></ion-icon>
+          </button>
+          <div class="content-post">
+           
+            <img class="img-post" src="./img/12036599a3257b4acaf813a01b315971.webp" alt="post-image">
+            
+          </div>
+          <div class="content-features">
+            <button class="btn btn-icon btn-with-span">
+              <ion-icon class="icon" name="heart-outline"></ion-icon>
+              <span>33</span>
+              <!-- <ion-icon name="heart-outline"></ion-icon> -->
+            </button>
+            <a href="#" class="link btn btn-icon">
+              <ion-icon class="icon" name="code-slash-outline"></ion-icon>
+            </a>
+            <form class="form-comment">
+              <input class="input-comment" type="text" placeholder="add a comment">
+              <button class="btn btn-comment ">
+                <ion-icon class="icon" name="send-outline"></ion-icon>
+              </button>
+            </form>
+            <button class="btn btn-icon">
+              <ion-icon class="icon" name="bookmark-outline"></ion-icon>
+              <!-- <ion-icon class="icon" name="bookmark"></ion-icon> -->
+            </button>
+            <button class="btn btn-icon">
+              <ion-icon class="icon" name="share-social-outline"></ion-icon>
+            </button>
+          
+          </div>
+          
         </div>
+        
         
       </div>
     </main>
@@ -122,5 +227,6 @@
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
     ></script>
+    <script src="./index.js"></script>
   </body>
 </html>

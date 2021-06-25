@@ -10,11 +10,20 @@
 .sidebar {
   grid-row: 2/-1;
   grid-column: 1/2;
+  @include repond(ipad) {
+    grid-row: 1 /1;
+    grid-column: 1/1;
+    display: none;
+  }
 }
 .main-page {
   grid-row: 2/-1;
   grid-column: 2/-1;
   overflow-y: scroll;
+  @include repond(ipad) {
+    grid-row: 2/-1;
+    grid-column: 1/-1;
+  }
 }
 .content {
   height: 100%;
@@ -27,17 +36,29 @@
   grid-row: 1/2;
   grid-column: 1/-1;
   border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
 }
 .content-post {
   grid-row: 2 /3;
   grid-column: 2/8;
   border-left: 1px solid gray;
   border-right: 1px solid gray;
+  background-color: rebeccapurple;
 }
 
 .content-features {
   border-top: 1px solid gray;
   grid-row: 3 /-1;
-  grid-column: 1/ -1;
-  border-bottom: 2px solid orangered;
+  grid-column: 2/ 8;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 1rem;
 }
+
+// #FF6F61
+// #6B5B95
+// #88B04B
+// #F7CAC9
+// #955251
+// #B565A7
